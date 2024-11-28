@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*Style header*/
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+header a{
+    color: #f6f3f3;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #4b3e48;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+header .btn-cadastro button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #83677b;
+    border: none;
+    color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header .btn-cadastro button:hover{
+    box-shadow: 0px 0px 8px #4b3e48;
+}
+
+/*main*/
+.contato{
+    display: flex;
+    padding: 40px 4%;
+    place-items: center;
+    min-height: 60vh;
+    margin-bottom: 140px;
+    
+}
+.txt-contato, .form-contato{
+    display: flex;
+    width: 50%;
+    color: #131414;
+    
+}
+
+.contato .txt-contato h3{
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 50px;
+    color: #f6f3f3;
+    
+}
+.contato .txt-contato h3 span{
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+
+}
+
+form{
+    width: 100%;
+    max-width: 30rem;
+    color: #f6f3f3;
+}
+
+label, input,textarea, button{
+    display: inline-block;
+}
+
+input, textarea, button{
+    width: 100%;
+    font: inherit;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    background:  #83677b;
+    color: white;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color .3s, box-shadow .3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+    outline: none;
+    border-color: #131414;
+    box-shadow: 0 0 0 0.1125rem #131414;
+}
+
+label{
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    min-height: 8.5rem;
+    resize: vertical;
+}
+
+button{
+    border: none;
+    border-radius: 99px;
+    color: #83677b;
+    background: #f6f3f3;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover,
+button:focus{
+    outline: none;
+    background: #4c4c4c;
+    color: #f6f3f3;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background: #4c4c4c;
+    
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: #f6f3f3;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+footer .final-footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 1220px){
+    .flex{
+        flex-direction: column;
+    }
+    .btn-cadastro{
+        display: none;
+    }
+    .contato .txt-contato h3{
+        font-size: 1.5em;
+        font-weight: 200;
+        
+    }
+    
+    /*rodape*/
+    footer{
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        
+    }
+}

@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*Style header*/
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+header a{
+    color: #f6f3f3;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header nav.menu-desktop a:hover{
+    color: #4b3e48;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+header .btn-cadastro button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #83677b;
+    border: none;
+    color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header .btn-cadastro button:hover{
+    box-shadow: 0px 0px 8px #4b3e48;
+}
+
+/*Estilo do menu mobile*/
+.btn-abrir-menu p{
+    color: #83677b;
+    font-size: 40px;
+}
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+    
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~.overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile .btn-fechar p{
+    color: #83677b;
+    font-size: 30px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #83677b;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #f6f3f3;
+    color: #000000;
+}
+
+.overlay-menu{
+    background-color: #000000da;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888888;
+    display: none;
+}
+
+
+
+/*style conteudo*/
+
+section conteudo-site{
+    padding: 40px 4%;
+}
+
+section.conteudo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.conteudo-site h1{
+    color: #f6f3f3;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.conteudo-site .txt h1 span{
+    display: block;
+    font-weight: 800;
+    color: #83677b;
+    font-size: 50px;
+}
+
+.conteudo-site .txt p{
+    color: #f6f3f3;
+    margin: 10px 0%;
+
+}
+
+.conteudo-site .img-conteudo img{
+    position: relative;
+    animation: flutuar 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+/*footer*/
+footer{
+    background-color: #f6f3f3;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+footer .final-footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 1340px){
+    /* CLASSES GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
+
+
+    /*HEADER*/
+    .btn-cadastro{
+        display: none;
+    }
+
+    /*Conteudo-site*/
+    section.conteudo-site .flex{
+        gap: 5px;
+}
+    section.conteudo-site{
+        padding: 20px 8%;
+        
+    }
+
+    
+    .conteudo-site h1{
+        font-size: 35px;
+
+    }
+
+    /*conteudo-site-span*/
+    .conteudo-site .txt h1 span{
+        font-size: 40px;
+
+    }
+    .conteudo-site .img-conteudo img{
+        width: 100%;
+    }
+
+    /*rodape*/
+    footer{
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        
+    }
+    
+}
