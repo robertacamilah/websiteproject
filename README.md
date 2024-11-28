@@ -6,7 +6,8 @@ e falar um pouco sobre nós e nossos hobbies.
 
 O site possui as seguintes páginas:
 
-* **Home:** Apresenta uma breve introdução sobre mim.
+* **Home:** Apresenta uma breve introdução.
+* **Sobre:** Minhas Competêcias e Hards Skill
 * **Galeria:** Exibe meus hobbies.
 * **Contato:** Permite que as pessoas entrem em contato comigo.
 
